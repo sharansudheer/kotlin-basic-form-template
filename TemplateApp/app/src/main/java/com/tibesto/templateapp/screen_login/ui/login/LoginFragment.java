@@ -23,7 +23,7 @@ import android.widget.Toast;
 
 import com.tibesto.templateapp.databinding.FragmentLoginBinding;
 
-import com.tibesto.templateapp.screen_login.R;
+import com.tibesto.templateapp.R;
 
 public class LoginFragment extends Fragment {
 

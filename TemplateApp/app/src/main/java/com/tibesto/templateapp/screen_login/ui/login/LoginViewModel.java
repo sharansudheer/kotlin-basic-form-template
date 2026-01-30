@@ -9,7 +9,7 @@ import android.util.Patterns;
 import com.tibesto.templateapp.screen_login.data.LoginRepository;
 import com.tibesto.templateapp.screen_login.data.Result;
 import com.tibesto.templateapp.screen_login.data.model.LoggedInUser;
-import com.tibesto.templateapp.screen_login.R;
+import com.tibesto.templateapp.R;
 
 public class LoginViewModel extends ViewModel {
 
