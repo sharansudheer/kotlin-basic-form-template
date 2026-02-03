@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_root"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tibesto.templateapp.screen_login.ui.login.LoginFragment"
+        android:label="Login">
+
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tibesto.templateapp.screen_home.HomePage"
+        android:label="Home" />
 </navigation>

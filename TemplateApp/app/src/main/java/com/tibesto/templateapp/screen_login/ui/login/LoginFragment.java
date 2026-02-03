@@ -1,5 +1,6 @@
 package com.tibesto.templateapp.screen_login.ui.login;
 
+import androidx.constraintlayout.widget.Guideline;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
@@ -47,10 +48,10 @@ public class LoginFragment extends Fragment {
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
-        final EditText usernameEditText = binding.username;
-        final EditText passwordEditText = binding.password;
-        final Button loginButton = binding.login;
-        final ProgressBar loadingProgressBar = binding.loading;
+        final EditText usernameEditText = binding.getName;
+        final EditText passwordEditText = binding.passwordLayout.getEditText();
+        final Button loginButton = binding.submitLogin;
+        final Guideline loadingProgressBar = binding.guideline;
 
         loginViewModel.getLoginFormState().observe(getViewLifecycleOwner(), new Observer<LoginFormState>() {
             @Override
