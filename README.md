@@ -14,3 +14,7 @@ This is a Java based Native app template following The MVVM Architecture, one Ma
 5. Material UI 3
 
 And more to be updated
+
+## Current Updates- 
+
+1. [#1](#1) - I have pushed the Ground 0 App, one is a reference, default template app provided by Android Studio - Responsive View Activity and the main project as an Empty App
